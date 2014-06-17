@@ -3,7 +3,8 @@
          '[cemerick.austin]
          '[vinyasa.lein :refer [lein]]
          '[clojure.tools.namespace.repl :refer [refresh]]
-         '[spyscope.core])
+         '[spyscope.core]
+         '[clojure.test :as t])
 
 (defn add-dependencies [& coordinates]
   (pomegranate/add-dependencies
