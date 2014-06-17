@@ -1,7 +1,7 @@
 {:user {:dependencies [[clj-stacktrace "0.2.7"]
                        [slamhound "1.5.0"]
                        [com.cemerick/pomegranate "0.2.0"]
-                       [im.chit/vinyasa "0.1.2"]
+                       [im.chit/vinyasa "0.2.0"]
                        [org.clojure/tools.namespace "0.2.4"]
                        [spyscope "0.1.4"]]
         :plugins [[lein-difftest "2.0.0"]
