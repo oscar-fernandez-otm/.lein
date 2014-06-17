@@ -2,9 +2,11 @@
          '[cemerick.austin.repls :as repls]
          '[cemerick.austin]
          '[vinyasa.lein :refer [lein]]
+         '[vinyasa.inject]
          '[clojure.tools.namespace.repl :refer [refresh]]
          '[spyscope.core]
          '[clojure.test :as t])
+
 
 (defn add-dependencies [& coordinates]
   (pomegranate/add-dependencies
@@ -18,6 +20,15 @@
                          "http://clojars.org/repo"
                          "sonatype-oss-public"
                          "https://oss.sonatype.org/content/groups/public/"})))
+
+(ns user) ;; needed in order vinyasa.inject doesn't fail
+(vinyasa.inject/inject 'clojure.core '-
+                       '[[user add-dependencies]
+                         [clojure.tools.namespace.repl refresh]
+                         [clojure.repl apropos dir doc find-doc source pst root-cause]
+                         [clojure.java.javadoc javadoc]
+
+                         [clojure.pprint pprint]])
 
 (defn austin-phantomjs [& args]
   (apply repls/exec :exec-cmds ["phantomjs"] args))
