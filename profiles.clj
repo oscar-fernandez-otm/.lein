@@ -3,7 +3,7 @@
                        [im.chit/vinyasa "0.2.0"]
                        [spyscope "0.1.4"]]
         :plugins [[lein-difftest "2.0.0"]
-                  [cider/cider-nrepl "0.7.0-SNAPSHOT"]
+                  [cider/cider-nrepl "0.7.0"]
                   [lein-marginalia "0.7.1"]
                   [lein-simpleton "1.3.0"]]
         :repl-options {
