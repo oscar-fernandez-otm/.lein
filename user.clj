@@ -10,3 +10,10 @@
                          [clojure.java.javadoc javadoc]
 
                          [clojure.pprint pprint]])
+
+(try ;; try to inject logging functions, may not be loaded
+  (require 'clojure.tools.logging)
+  (vinyasa.inject/inject 'clojure.core '-
+                        '[[clojure.tools.logging info warn error]])
+  (catch Exception e
+    (.printStackTrace e)))
