@@ -4,7 +4,7 @@
                        [spyscope "0.1.4"]
                        [org.apache.httpcomponents/httpclient "4.3.5"]]
         :plugins [[lein-difftest "2.0.0"]
-                  [cider/cider-nrepl "0.7.0"]
+                  [cider/cider-nrepl "0.8.1"]
                   [lein-marginalia "0.7.1"]
                   [lein-simpleton "1.3.0"]]
         :repl-options {
