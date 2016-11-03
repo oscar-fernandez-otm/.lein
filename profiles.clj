@@ -1,12 +1,11 @@
 {:user {:dependencies [[clj-stacktrace "0.2.8"]
-                       [im.chit/vinyasa "0.3.4"]
+                       [im.chit/vinyasa "0.4.3"]
                        [spyscope "0.1.4"]
                        [org.apache.httpcomponents/httpclient "4.3.5"]]
         :plugins [[lein-difftest "2.0.0"]
-                  [cider/cider-nrepl "0.10.0-SNAPSHOT"]
-                  [refactor-nrepl "2.0.0-SNAPSHOT"]
-                  [lein-marginalia "0.7.1"]
-                  [lein-simpleton "1.3.0"]]
+                  [cider/cider-nrepl "0.14.0"]
+                  [refactor-nrepl "2.3.0-SNAPSHOT"]
+                  #_[lein-simpleton "1.3.0"]]
         :repl-options {
                        :init
                        (load-file (str
