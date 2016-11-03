@@ -8,6 +8,7 @@
 (vinyasa.inject/inject '[clojure.core - [clojure.java.javadoc javadoc]])
 
 (vinyasa.inject/inject '[clojure.core - [clojure.pprint pprint]])
+(vinyasa.inject/inject '[clojure.core - [spyscope.repl trace-query trace-next trace-clear]])
 
 (try ;; try to inject logging functions, may not be loaded
   (require 'clojure.tools.logging)
