@@ -1,6 +1,6 @@
 {:user {:dependencies [[clj-stacktrace "0.2.8"]
-                       [im.chit/vinyasa "0.4.3"]
-                       [spyscope "0.1.4"]
+                       [zcaudate/lucid "1.4.4"]
+                       [spyscope "0.1.6"]
                        [com.cemerick/piggieback "0.2.2"]]
         :plugins [[lein-difftest "2.0.0"]
                   [cider/cider-nrepl "0.17.0-SNAPSHOT"]
