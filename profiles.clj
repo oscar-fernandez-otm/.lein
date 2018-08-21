@@ -1,4 +1,5 @@
-{:user {:dependencies [[clj-stacktrace "0.2.8"]
+{:user {:pedantic? :warn
+        :dependencies [[clj-stacktrace "0.2.8"]
                        [zcaudate/lucid "1.4.4"]
                        [spyscope "0.1.6"]
                        [com.cemerick/piggieback "0.2.2"]]
