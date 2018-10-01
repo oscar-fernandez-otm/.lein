@@ -23,7 +23,7 @@
   (catch Throwable e
     (.printStackTrace e)))
 
-#_(try ;; try to inject lucid.package
+(try ;; try to inject lucid.package
   (require 'lucid.package)
   (inject/in clojure.core - [lucid.package pull])
   (catch Throwable e
