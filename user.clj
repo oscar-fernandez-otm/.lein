@@ -17,6 +17,8 @@
            clojure.core - [lucid.git git]
            clojure.core - [lucid.mind .% .%> .* .?])
 
+(inject/in clojure.core - [criterium.core bench quick-bench with-progress-reporting])
+
 (try ;; try to inject logging functions, may not be loaded
   (require 'clojure.tools.logging)
   (inject/in clojure.core - [clojure.tools.logging info warn error])
