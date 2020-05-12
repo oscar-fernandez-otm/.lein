@@ -15,8 +15,8 @@
                        #_[cljs-analyzer "0.1.0-SNAPSHOT"]
                        [cider/piggieback "0.4.2"]
                        [criterium "0.4.4"]]
-        :plugins [[cider/cider-nrepl "0.22.4"]
-                  [refactor-nrepl "2.4.0" :exclusions [org.clojure/clojure nrepl]]]
+        :plugins [[cider/cider-nrepl "0.24.0"]
+                  [refactor-nrepl "2.5.0" :exclusions [org.clojure/clojure nrepl]]]
         :repl-options {;;:nrepl-middleware [cider.piggieback/wrap-cljs-repl]
                        :init             (load-file (str
                                                      (System/getProperty "user.home")
