@@ -1,5 +1,5 @@
 (require '[spyscope.core]
-         '[clojure.test :as t]
+         '[clojure.test :as clojure-test]
          '[lucid.core.inject :as inject]
          '[lucid.core.debug :as debug]
          'lucid.core.namespace
@@ -22,11 +22,5 @@
 (try ;; try to inject logging functions, may not be loaded
   (require 'clojure.tools.logging)
   (inject/in clojure.core - [clojure.tools.logging info warn error])
-  (catch Throwable e
-    (.printStackTrace e)))
-
-(try ;; try to inject lucid.package
-  (require 'lucid.package)
-  (inject/in clojure.core - [lucid.package pull])
   (catch Throwable e
     (.printStackTrace e)))
