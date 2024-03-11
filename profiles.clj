@@ -1,5 +1,7 @@
-{:user {:plugins [[lein-difftest "2.0.0"]]
-        :dependencies [[clj-kondo "2021.04.23" :exclusions [com.cognitect/transit-clj com.cognitect/transit-java cheshire org.clojure/tools.reader]]]
+{:user {:plugins [[lein-difftest "2.0.0"]
+                  [lein-pprint "1.3.2"]]
+        :dependencies [[borkdude/edamame "1.4.25" :exclusions [org.clojure/tools.reader]]
+                       [clj-kondo "2024.03.05" :exclusions [com.cognitect/transit-clj com.cognitect/transit-java cheshire org.clojure/tools.reader ]]]
         :aliases {"clj-kondo" ["run" "-m" "clj-kondo.main"]}}
  :repl {:pedantic? :warn
 
